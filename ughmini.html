@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+canvas {
+    border: 1px solid #d3d3d3;
+    background-image: url("sky.svg");
+}
+
+button {
+    border: 0px;
+    background-color: grey;
+    font-size: 18px;
+    font-family: "montserrat", sans-serif;
+    color: black;
+    text-align:center;
+    margin:5px;
+    padding:10px;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script src="myscripts.js"></script>
+<br>
+<center><button onkeydown="accelerate(-0.2)" onkeyup="accelerate(0.09)"><b> Click to activate the ship!</b></button> <button type="button" onClick="reloadThePage()" style = "background-color: powderblue;">Restart!</button></center>
+</body>
+</html>
